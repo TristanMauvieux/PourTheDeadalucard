@@ -1,38 +1,66 @@
-<!doctype <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./bootstrap-4.1.1-dist/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./bootstrap-4.1.1-dist/css/bootstrap-grid.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
     <title>The Deadalucard</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="./bootstrap-4.1.1-dist/js/bootstrap.bundle.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
 </head>
 <body>
     <header>
         <label>The Deadalucard la pa$$sion</label>
     </header>
 
-    <nav>
-        <a href="./Compte/FormulaireInscription.html">Inscription</a>
-        <a href="./Compte/FormulaireConnexion.html">Connexion</a>
-    </nav>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Active</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Inscription</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Connexion</a>
+        </li>
+      </ul>
 
     
     <section>
-        <article>
-                <div id="twitch-embed"></div>
-                <script src="https://embed.twitch.tv/embed/v1.js"></script>
+        <div class="container" >
+            <div class="row">
+                <div class="col col-lg-2"><br/></div>
+                    <div class="col col-lg-6">
+                   
+                                <div id="twitch-embed"></div>
+                                <script src="https://embed.twitch.tv/embed/v1.js"></script>
+                
+                                <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+                                <script type="text/javascript">
+                                new Twitch.Embed("twitch-embed", {
+                                    width: 1054,
+                                    height: 580,
+                                    channel: "thedeadalucard"
+                                });
+                                </script>
+                       
+                    </div>
+                <div class="col col-lg-4"><br/></div>
 
-                <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
-                <script type="text/javascript">
-                  new Twitch.Embed("twitch-embed", {
-                    width: 854,
-                    height: 480,
-                    channel: "thedeadalucard"
-                  });
-                </script>
-        </article>
+            </div>
+
+        </div>
+      
         <article>
             <h1>Je suis une version test pas belle</h1>
             
