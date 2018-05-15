@@ -21,10 +21,24 @@
     
     <section>
         <article>
+                <div id="twitch-embed"></div>
+                <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+                <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+                <script type="text/javascript">
+                  new Twitch.Embed("twitch-embed", {
+                    width: 854,
+                    height: 480,
+                    channel: "thedeadalucard"
+                  });
+                </script>
+        </article>
+        <article>
             <h1>Je suis une version test pas belle</h1>
             
             <p>Ceci est une projet pour le grand Deadalucard, parce qu'il veux son site mais personne ne veux ce dévouer</p>
         </article>
+
      </section>   
     <aside>
         <ul>
