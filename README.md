@@ -3,3 +3,5 @@
 
 *tache en cours 
 * page de garde avec écran pour twitch
+
+-> liens vers la communauté http://discord.gg/AS29BN9
