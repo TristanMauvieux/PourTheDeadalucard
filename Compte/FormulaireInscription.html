@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <script>
+        var motDePasse = document.getElementById("motDePasse");
+        var ConfirmMotDePasse = document.getElementById("confirmMotDePasse");
+        function valideMotDePasse(){
+            var mdp = motDePasse.textContent;
+            var Confirmer = ConfirmMotDePasse.textContent;
+            if(Confirmer.trim() == ""){
+                //TODO définir systeme d'alerte pour dire attention mauvais mot de passe
+            }
+            else if(mdp.trim()==""){
+               //TODO définir systeme d'alerte pour dire attention mauvais mot de passe
+
+            }
+            else if(mdp != Confirmer){
+                //TODO définir systeme d'alerte pour dire attention mauvais mot de passe
+
+            }
+            else{
+
+            }
+               
+        }
+    </script>
+</head>
+<body>
+    <form action="#inscription" method="POST" >
+        <div class="label">
+            <label>Pseudo</label><br/> 
+            <input id="pseudo" type="text" maxlength="150" placeholder="Votre Pseudo"/>
+            <br/> <label>Email</label><br/> 
+            <input id="mail" type="email" maxlength="180" placeholder="Votre adresse Email"/>
+            <br/> <label>Mot de passe</label><br/> 
+            <input id="motDePasse" type="password" maxlength="180" placeholder="Votre mot de passe"/>
+            <br/> <label>Confirmer votre mot de passe</label><br/> 
+            <input id="ConfirmMotDePasse" type="password" maxlength="180" placeholder="Confirmer votre mot de passe" onclick="valideMotDePasse()"/>
+            <br/> <input id="confirmer" type="submit" value="Confirmer"><br/> 
+        </div>
+
+        
+
+    </form>
+    
+</body>
+</html>
